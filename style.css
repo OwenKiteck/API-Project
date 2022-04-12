@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Lobster&family=Nunito:ital,wght@0,400;0,700;0,800;1,400&family=Press+Start+2P&family=Supermercado+One&family=Yusei+Magic&display=swap');
+
+body {
+    background-color: rgb(31, 22, 22);
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+/* Header section styles */
+#header>h1 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    letter-spacing: 8px;
+    margin: 50px 0 0 0;
+}
+#header>h2 {
+    text-align: center;
+    color: rgb(163, 148, 148);
+    font-size: 20px;
+}
+
+/* Main section styles */
+div {
+    background-color: rgb(238, 106, 106);
+    margin: 30px 10px 30px 10px;
+    padding: 5px 20px 5px 20px;
+    color: white;
+    border: rgb(247, 199, 199) solid 7px;
+    border-radius: 5px;
+}
