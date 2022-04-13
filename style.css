@@ -5,7 +5,7 @@ body {
     font-family: 'Yusei Magic', sans-serif;
 }
 
-/* Header section styles */
+/* HEADER section styles */
 #header>h1 {
     font-family: 'Lobster', cursive;
     text-align: center;
@@ -14,18 +14,46 @@ body {
     letter-spacing: 8px;
     margin: 50px 0 0 0;
 }
-#header>h2 {
+#header>h3 {
     text-align: center;
     color: rgb(163, 148, 148);
     font-size: 20px;
 }
 
-/* Main section styles */
-div {
+/* MAIN section styles */
+#pick-a-card, #your-card {
     background-color: rgb(238, 106, 106);
-    margin: 30px 10px 30px 10px;
-    padding: 5px 20px 5px 20px;
-    color: white;
+    margin: 30px 10vw 30px 10vw;
+    padding: 5px 20px 20px 20px;
     border: rgb(247, 199, 199) solid 7px;
     border-radius: 5px;
 }
+h2 {
+    color: white;
+    font-size: 24px;
+}
+
+
+#even-display {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.div-white {
+    background-color: rgb(255, 245, 234);
+    border: rgb(255, 245, 234) solid 7px;
+    border-radius: 5px;
+    /* Bellow are temporary */
+    width: 200px;
+    height: 200px;
+}
+p {
+    text-align: center;
+    color: white;
+}
+
+
+
+
+/* Positioning the "Pick a card" section */
