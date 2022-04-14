@@ -3,6 +3,7 @@
 body {
     background-color: rgb(31, 22, 22);
     font-family: 'Yusei Magic', sans-serif;
+    
 }
 
 /* HEADER section styles */
@@ -40,20 +41,75 @@ h2 {
 }
 
 
-.div-white {
-    background-color: rgb(255, 245, 234);
-    border: rgb(255, 245, 234) solid 7px;
-    border-radius: 5px;
-    /* Bellow are temporary */
-    width: 200px;
-    height: 200px;
-}
 p {
     text-align: center;
     color: white;
 }
 
+#footer{
+    text-align: center;
+    color: whitesmoke;
+}
+.div-white {
+    background-color: rgb(255, 245, 234);
+    border: rgb(255, 245, 234) solid 7px;
+    border-radius: 5px;
+    /* Bellow are temporary */
+    width: 490px;
+    height: 185px;
+}
 
-
-
+.button{
+    border: 3px solid black ;
+    padding: 15px;
+    font-size: 2rem;
+    margin: 10px 5px;
+    background-color: white;  
+    cursor: pointer;  
+}
+.div-white2 {
+    background-color: rgb(255, 245, 234);
+    border: rgb(255, 245, 234) solid 7px;
+    border-radius: 5px;
+    /* Bellow are temporary */
+    width: 354px;
+    height: 120px;
+    
+}
+.button2{
+    font-size: 100px;
+    letter-spacing: 10px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.button2:hover{
+    background-color: rgb(238, 106, 106);
+    color: white;
+}
+.button:hover{
+    background-color: rgb(238, 106, 106);
+    color: white;
+}
 /* Positioning the "Pick a card" section */
+
+
+
+/* "is this your card?" section*/
+#your-card-area{
+    background-color: rgb(255, 245, 234);
+    border: rgb(255, 245, 234) solid 7px;
+    border-radius: 5px;
+    width: 400px;
+    height: 500px;
+    
+}
+
+.answer{
+    font-size: 30px;
+    border: 3px solid black ;
+    padding: 15px;
+    margin: 10px 5px;
+    background-color: white;  
+    cursor: pointer; 
+}

@@ -10,6 +10,7 @@
     <!-- Link to JavaScript (will still run correctly even though its in the head) -->
     <script src="app.js" defer></script>
     <title>API Magic Card Trick</title>
+    <script src="https://kit.fontawesome.com/d3fc892000.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Title/header section -->
@@ -28,14 +29,32 @@
                 <div id="card-number">
                     <p>- Pick a number -</p>
                     <div class="div-white">
-    
+                        <!-- Icons -->
+                        <button class='button'>2</button>
+                        <button class='button'>3</button>
+                        <button class='button'>4</button>
+                        <button class='button'>5</button>
+                        <button class='button'>6</button>
+                        <button class='button'>7</button>
+                        <button class='button'>8</button>
+                        <button class='button'>9</button>
+                        <button class='button'>10</button>
+                        <!-- This is 10, they dont have a 10. -->
+                        <button class='button'>J</button>
+                        <button class='button'>Q</button>
+                        <button class='button'>K</button>
+                        <button class='button'>A</button>
                     </div>
                 </div>
                 <!-- Buttons to pick the card suit -->
                 <div id="card-suit">
                     <p>- Pick a suit -</p>
-                    <div class="div-white">
-    
+                    <div class="div-white2">
+                        <!-- Suits -->
+                        <button class="button2">&clubs;</button>
+                        <button class="button2">&hearts;</button>
+                        <button class="button2">&diams;</button>
+                        <button class="button2">&spades;</button>
                     </div>
                 </div>
             </div>
@@ -44,6 +63,11 @@
 
         <div id="your-card">
             <h2>Is this your card?</h2>
+            <div id="your-card-area">
+                
+            </div>
+            <button class="answer" id="yes">Yes</button>
+            <button class="answer" id="no">No</button>
         </div>
     </section>
 
