@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Lobster&family=Nunito:ital,wght@0,400;0,700;0,800;1,400&family=Press+Start+2P&family=Supermercado+One&family=Yusei+Magic&display=swap');
 
+html {
+    font-size: 16px;
+}
 body {
     background-color: rgb(31, 22, 22);
     font-family: 'Yusei Magic', sans-serif;
-    
 }
 
 /* HEADER section styles */
@@ -55,41 +57,46 @@ p {
     border: rgb(255, 245, 234) solid 7px;
     border-radius: 5px;
     /* Bellow are temporary */
-    width: 490px;
-    height: 185px;
+    /* width: 490px; */
+    height: 320px;
+    margin: 0px 30px;
 }
 
-.button{
-    border: 3px solid black ;
-    padding: 15px;
-    font-size: 2rem;
-    margin: 10px 5px;
-    background-color: white;  
-    cursor: pointer;  
-}
 .div-white2 {
     background-color: rgb(255, 245, 234);
     border: rgb(255, 245, 234) solid 7px;
     border-radius: 5px;
     /* Bellow are temporary */
-    width: 354px;
-    height: 120px;
-    
+    /* width: 354px; */
+    height: 320px;
+    margin: 0px 30px;
+}
+
+/* BUTTONS */
+.button{
+    border: 3px solid black ;
+    padding: 15px 0;
+    font-size: 2rem;
+    margin: 10px 5px;
+    background-color: white;  
+    cursor: pointer;
+    width: 60px;
 }
 .button2{
     font-size: 100px;
-    letter-spacing: 10px;
     background-color: white;
     text-align: center;
     cursor: pointer;
+    margin: 0;
+    padding: 0;
+    width: 120px;
 }
-.button2:hover{
+.button:hover, .button2:hover{
     background-color: rgb(238, 106, 106);
     color: white;
 }
-.button:hover{
-    background-color: rgb(238, 106, 106);
-    color: white;
+.col-6, .col-3 {
+    text-align: center;
 }
 /* Positioning the "Pick a card" section */
 
@@ -102,7 +109,6 @@ p {
     border-radius: 5px;
     width: 400px;
     height: 500px;
-    
 }
 
 .answer{
