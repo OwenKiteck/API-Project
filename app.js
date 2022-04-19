@@ -23,7 +23,10 @@ const heart = document.getElementById(`heart`)
 const diamond = document.getElementById(`diamond`)
 const spade = document.getElementById(`spade`)
 
-two.onclick = () => number = `2`;
+two.onclick = () => {
+    number = `2`
+    console.log(number)
+};
 three.onclick = () => number = `3`;
 four.onclick = () => number = `4`;
 five.onclick = () => number = `5`;
@@ -44,7 +47,39 @@ spade.onclick = () => suit = `S`;
 
 
 
+// When the Guess button is clicked
+const guess = document.getElementById(`guess`)
 
+guess.onclick = () => {
+    let imageLink
+    // console.log(`It works`);
+    if (number != undefined && suit != undefined){
+        async function getCard(){
+            try {
+                // Below finds the card the person picked in the stack and returns it 
+                const card = await axios.get(`https://deckofcardsapi.com/api/deck/new/draw/?count=52`)
+                const cardArray = card.data.cards;
+                // console.log(cardArray);
+                for (item of cardArray){
+                    if (item.code === number + suit){
+                        imageLink = item.image;
+                        console.log(imageLink);
+                    }
+                }
+
+                // Below will put the image and text into the html file
+                const yourCard = document.getElementById(`your-card-area`)
+                
+        
+            } catch (err) {
+                console.log(err);
+            }
+        }
+        getCard()
+    } else {
+        alert(`Please select a number and a suit`)
+    }
+}
 
 
 // Answer(() => {
