@@ -51,7 +51,15 @@ spade.onclick = () => suit = `S`;
 const guess = document.getElementById(`guess`)
 
 guess.onclick = () => {
-    let imageLink
+    const yourCard = document.getElementById(`your-card-area`)
+    const area = document.querySelectorAll(`#your-card-area *`)
+    for (items of area){
+        items.remove();
+    }
+    console.dir(area)
+
+
+    let imageLink;
     // console.log(`It works`);
     if (number != undefined && suit != undefined){
         async function getCard(){
@@ -59,7 +67,7 @@ guess.onclick = () => {
                 // Below finds the card the person picked in the stack and returns it 
                 const card = await axios.get(`https://deckofcardsapi.com/api/deck/new/draw/?count=52`)
                 const cardArray = card.data.cards;
-                // console.log(cardArray);
+                console.log(cardArray);
                 for (item of cardArray){
                     if (item.code === number + suit){
                         imageLink = item.image;
@@ -68,7 +76,12 @@ guess.onclick = () => {
                 }
 
                 // Below will put the image and text into the html file
-                const yourCard = document.getElementById(`your-card-area`)
+                const image = document.createElement(`img`)
+                image.src = imageLink;
+                const isThisIt = document.createElement(`h1`)
+                isThisIt.innerText = `~ Is this your card? ~`;
+
+                yourCard.append(isThisIt, image)
                 
         
             } catch (err) {
@@ -77,7 +90,9 @@ guess.onclick = () => {
         }
         getCard()
     } else {
-        alert(`Please select a number and a suit`)
+        const tryAgain = document.createElement(`h1`)
+        tryAgain.innerText = `Please select a number and suit`;
+        yourCard.append(tryAgain)
     }
 }
 
