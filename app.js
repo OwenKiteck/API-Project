@@ -34,7 +34,7 @@ six.onclick = () => number = `6`;
 seven.onclick = () => number = `7`;
 eight.onclick = () => number = `8`;
 nine.onclick = () => number = `9`;
-ten.onclick = () => number = `10`;
+ten.onclick = () => number = `0`;
 jack.onclick = () => number = `J`;
 queen.onclick = () => number = `Q`;
 king.onclick = () => number = `K`;
